@@ -1,0 +1,206 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    z-index: 100;
+    font-size: 18px;
+    width: 1vw;
+    box-sizing: border-box;
+}
+
+.masthead{
+    width: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    background-color:black;
+    color: white;
+    font-family: 'Cutive Mono', monospace;
+
+    
+}
+
+.masthead div {
+    height: 100%;
+    padding:5px;
+    text-align: center;
+    font-size: 12px;
+    height: 1rem;
+}
+
+.masthead div a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+}
+
+
+.logo {
+    background-color:rgb(225, 0, 0);
+    width:5%;
+    font-family: 'Dancing Script', cursive;
+}
+.logo a{
+    text-transform: none !important;
+    font-size: 18px;
+}
+
+.active {
+    background-color:rgba(225, 0, 0, 0.60);
+} 
+
+.navigation {
+    width: 10%;
+}
+.navigation:hover {
+    background-color: rgb(225, 0, 0);
+}
+
+img {
+    filter: invert(1);
+    height: 1em !important;
+    align-self: center;
+    
+}
+button {
+    background-color: red;
+    border: solid red 1px;
+    height: 1.3em !important;
+    cursor: pointer;
+}
+
+.searchfield {
+    max-height: 1em;
+    width: 50%;
+}
+.searchbar {
+    width: 45%;
+    text-align: left !important;
+}
+.cart {
+    width:10%;
+    text-align: right !important;
+}
+footer .masthead{
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.main {
+    background-color: gainsboro;
+    min-height: 1000px;
+}
+.main h1 {
+    text-align: center;
+}
+.portfolio {
+    height: 100000px;
+}
+.beorbed {
+    height: 1000px;
+}
+
+.shadow {
+    color: gainsboro;
+    text-shadow: -7px -7px 1px black, 6px -6px 2px gainsboro, 5px 5px 3px black, -4px 4px 4px black, -15px -20px 8px black, 20px -15px 8px black, 15px 20px 8px black, -20px 15px 8px black;
+}
+
+.orb {
+    border-radius: 100%;
+    box-shadow: 10px 10px 100px black inset, 0px 0px 50px black;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    top: 300px;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    animation: pulse 5s infinite ease-in-out;
+}
+.orb:hover {
+    animation: connect 15s forwards , pulse 5s infinite ease-in-out, expand 1s 3.2s forwards, expand 0.5s 15s reverse forwards;
+}
+.orb:hover .message {
+    animation: appear forwards 5s 16s;
+}
+.message {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    cursor: default;
+}
+
+.picture {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.picture img {
+    filter: none;
+    height: 250px;
+    width: 250px;
+}
+.main {
+    padding: 5px 50px;
+}
+.flex {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.flex h2 {
+    padding: 20px;
+}
+.flex li{
+    padding: 10px;
+}
+
+
+
+@keyframes pulse {
+    0%, 100% {
+transform: scale(1);
+    }
+    50% {
+transform: scale(1.5);
+    }
+}
+
+@keyframes connect {
+    0% {
+        background-color: ghostwhite;
+        box-shadow: 10px 10px 100px black inset, 0px 0px 50px black;
+    }
+    20% {
+        box-shadow: 0px 0px 0px black inset, 0px 0px 0px black;
+        
+
+    }
+    100% {
+        background-color: black;
+        box-shadow: 0px 0px 10000px ghostwhite inset, 0px 0px 10000px black;
+    }
+
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(8);
+    }
+}
+ @keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
